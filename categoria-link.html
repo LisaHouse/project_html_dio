@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria Link</title>
 </head>
+
 <body>
 
 
-   <h1>Categoria Link</h1>  
-   <hr>  
-   <li><a href="#a">a</a></li>
-   <br><br>
-     <li><strong>a</strong></li>
-    Para redirecionar a link externo, outra página web interna ou levar o usuario á alguma 
+    <h1>Categoria Link</h1>
+    <hr>
+    <li><a href="#a">a</a></li>
+    <li><a href="#iframe">iframe</a></li>
+    <p>
+        <br><br>
+    <h4 id="a"><strong>a</strong></h4>
+    Para redirecionar a link externo, outra página web interna ou levar o usuario á alguma
     parte específica na mesma página <br>
     Atributos específicos:
     <ul>
@@ -23,5 +27,27 @@
         <li>target: _blank(abre em nova aba), _self(abre na mesma página)</li>
     </ul>
     </p>
+
+
+    <p>
+    <h4 id="iframe"><strong>a</strong></h4>
+    disponibilizar na propria página a utilização de outra pagina web(EM HMTL) <br>
+    Atributos específicos:
+    <ul>
+        <li>src: link</li>
+        <li>width e height: O tamanho que aquela janela ocupará no site</li>
+        <li>name: nome do iframe</li>
+        <li>allow: permissões que aquela iframe pode ter, como uso de camera e autoplay</li>
+        <li>sandbox: Restringe o comportamento do iframe por segurança (evita scripts, redirecionamentos etc.). <br>
+            "" (sandbox ativado, bloqueia tudo).
+
+            "allow-scripts" (permite JavaScript).
+
+            "allow-same-origin" (permite acesso à mesma origem).</li>
+        <li>loading: Controla o carregamento lazy (adiado) ou eager (imediato).</li>
+        <li>referrerpolicy: Define quais informações de referência (origem) são enviadas ao carregar o iframe.</li>
+    </ul>
+    </p>
 </body>
+
 </html>
