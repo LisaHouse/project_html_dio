@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria Link</title>
+    <title>Categoria Link/Mídia</title>
 </head>
 
 <body>
@@ -14,6 +14,11 @@
     <hr>
     <li><a href="#a">a</a></li>
     <li><a href="#iframe">iframe</a></li>
+    <li><a href="#img">img</a></li>
+    <li><a href="#audio">audio</a></li>
+    <li><a href="#video">video</a></li>
+
+
     <p>
         <br><br>
     <h4 id="a"><strong>a</strong></h4>
@@ -48,6 +53,43 @@
         <li>referrerpolicy: Define quais informações de referência (origem) são enviadas ao carregar o iframe.</li>
     </ul>
     </p>
+
+    <p>
+    <h4 id="img"><strong>img</strong></h4>
+    Colocar imagens ou gifs na página <br>
+    Atributos específicos:
+    <ul>
+        <li>src: link ou caminho do arquivo</li>
+        <li>width e height: O tamanho que aquela janela ocupará no site</li>
+        <li>title: Nome que aparece ao passar o mouse na imagem</li>
+        <li>alt: para a acessibilidade, possibilitar a leitura em áudio para com pessoas com deficiencia auditiva</li>
+    </ul>
+    </p>
+
+    <h4 id="audio"><strong>audio</strong></h4>
+    Colocar áudio na página <br>
+    Atributos específicos:
+    <ul>
+        <li>src: link ou caminho do arquivo</li>
+        <li>source: tag filha para indicar o src</li>
+        <li>controls: padrão mostra opção de aumentar áudio, pause etc..</li>
+        <li>autoplay: começa a tocar automático</li>
+        </p>
+</body>
+
+<h4 id="video"><strong>video</strong></h4>
+    Coloca video na página <br>
+    Atributos específicos:
+    <ul>
+        <li>src: link ou caminho do arquivo</li>
+        <li>source: tag filha para indicar o src</li>
+        <li>controls: padrão mostra opção de aumentar áudio, pause etc..</li>
+        <li>autoplay: começa a tocar automático</li>
+        <li>track: Recurso de acessibilidade:
+            também possue src para arquivo .vtt ou .srt, onde é colocado as legendas.
+            dentro do track pode se usar a tag kind, onde pode ter as tags, captions, chapters, descriptions, metadata e subtitles, que define a categoria da legenda e srclang que define a lingua
+        </li>
+        </p>
 </body>
 
 </html>
